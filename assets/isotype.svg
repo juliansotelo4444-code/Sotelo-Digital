@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
+  <!-- Outer Hexagonal / Isometric Cube Contour -->
+  <defs>
+    <linearGradient id="redGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF1A1A"/>
+      <stop offset="100%" stop-color="#D90404"/>
+    </linearGradient>
+    <linearGradient id="darkGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1A1A1A"/>
+      <stop offset="100%" stop-color="#080808"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Outer Isometric Hexagon Framework -->
+  <polygon points="60,8 105,34 105,86 60,112 15,86 15,34" 
+           stroke="#0F0F0F" stroke-width="5" stroke-linejoin="round" fill="none" opacity="0.15"/>
+
+  <!-- Isometric Cube Inner Structure Lines -->
+  <!-- Top Rhombus Face -->
+  <path d="M60 8 L105 34 L60 60 L15 34 Z" 
+        stroke="#0F0F0F" stroke-width="6" stroke-linejoin="round" fill="none"/>
+
+  <!-- Left Bottom Face Border -->
+  <path d="M15 34 L15 86 L60 112 L60 60" 
+        stroke="#E50914" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+
+  <!-- Right Bottom Face Border -->
+  <path d="M105 34 L105 86 L60 112" 
+        stroke="#0F0F0F" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+
+  <!-- Dynamic 'S' Overlapping Geometry (Red & Contrast Black Accent) -->
+  <!-- Top loop of S -->
+  <path d="M15 34 L60 8 L105 34 L60 60" 
+        stroke="url(#redGrad)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Diagonal transversal ribbon -->
+  <path d="M60 60 L15 86 L60 112 L105 86" 
+        stroke="url(#redGrad)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Cross isometric cut creating the monogram S -->
+  <path d="M40 48 L80 72" 
+        stroke="#0F0F0F" stroke-width="6" stroke-linecap="round"/>
+        
+  <!-- Center connecting node -->
+  <circle cx="60" cy="60" r="4.5" fill="#E50914"/>
+</svg>

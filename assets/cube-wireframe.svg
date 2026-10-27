@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <!-- Top Face -->
+  <polygon points="50,15 85,35 50,55 15,35" stroke="#E50914" stroke-width="3" fill="#FFFFFF" fill-opacity="0.9" stroke-linejoin="round"/>
+  <!-- Left Face -->
+  <polygon points="15,35 50,55 50,90 15,70" stroke="#111111" stroke-width="3" fill="#F5F5F7" fill-opacity="0.9" stroke-linejoin="round"/>
+  <!-- Right Face -->
+  <polygon points="50,55 85,35 85,70 50,90" stroke="#E50914" stroke-width="3" fill="#FFFFFF" fill-opacity="0.9" stroke-linejoin="round"/>
+  <!-- Inner Red Corner Accent -->
+  <polyline points="50,55 50,90" stroke="#E50914" stroke-width="3.5" stroke-linecap="round"/>
+  <circle cx="50" cy="55" r="2.5" fill="#E50914"/>
+</svg>

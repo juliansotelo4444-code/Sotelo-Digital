@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675">
+  <defs>
+    <linearGradient id="eventBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#190714"/>
+      <stop offset="50%" stop-color="#2a0d20"/>
+      <stop offset="100%" stop-color="#40122e"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fde68a"/>
+      <stop offset="50%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    <linearGradient id="wineGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="rgba(76, 20, 56, 0.8)"/>
+      <stop offset="100%" stop-color="rgba(33, 9, 25, 0.95)"/>
+    </linearGradient>
+    <filter id="eventGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#eventBg)"/>
+  
+  <!-- Subtle Rings -->
+  <circle cx="600" cy="337" r="280" fill="none" stroke="rgba(253, 230, 138, 0.1)" stroke-width="1.5" stroke-dasharray="6 6"/>
+  <circle cx="600" cy="337" r="200" fill="none" stroke="rgba(0, 255, 135, 0.12)" stroke-width="1.5"/>
+  <circle cx="200" cy="200" r="180" fill="#00ff87" opacity="0.08" filter="url(#eventGlow)"/>
+  <circle cx="1000" cy="450" r="220" fill="#be185d" opacity="0.14" filter="url(#eventGlow)"/>
+
+  <!-- Centered Interactive Invitation Showcase -->
+  <g transform="translate(360, 85)">
+    <rect width="480" height="505" rx="24" fill="url(#wineGrad)" stroke="rgba(253, 230, 138, 0.3)" stroke-width="1.5"/>
+    
+    <text x="240" y="70" text-anchor="middle" fill="url(#goldGrad)" font-family="'Space Grotesk', sans-serif" font-size="13" font-weight="700" letter-spacing="4">LUXURY EVENT EXPERIENCE</text>
+    <text x="240" y="125" text-anchor="middle" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="34" font-weight="700">Gala &amp; Exhibition</text>
+    <text x="240" y="160" text-anchor="middle" fill="#fbcfe8" font-family="'Space Grotesk', sans-serif" font-size="15">Paleta Borgoña &amp; Champán · Edición Exclusiva</text>
+    
+    <line x1="90" y1="200" x2="390" y2="200" stroke="rgba(253, 230, 138, 0.2)" stroke-width="1"/>
+
+    <!-- Event details card -->
+    <rect x="70" y="230" width="340" height="150" rx="16" fill="rgba(15, 5, 12, 0.7)" stroke="rgba(0,255,135,0.2)" stroke-width="1"/>
+    
+    <text x="100" y="270" fill="#a78295" font-family="'DM Mono', monospace" font-size="11">RSVP DIGITAL CONFIRMATION</text>
+    <text x="100" y="300" fill="#00ff87" font-family="'Space Grotesk', sans-serif" font-size="16" font-weight="600">✓ 85% Confirmados · QR Activo</text>
+    <text x="100" y="335" fill="#fbcfe8" font-family="'DM Mono', monospace" font-size="12">14 NOV 2026 · Salón Bellas Artes</text>
+    <text x="100" y="358" fill="#94a3b8" font-family="'Space Grotesk', sans-serif" font-size="12">Acceso dinámico vía wallet digital</text>
+
+    <!-- Button -->
+    <rect x="130" y="415" width="220" height="48" rx="24" fill="url(#goldGrad)"/>
+    <text x="240" y="445" text-anchor="middle" fill="#1e0b17" font-family="'Space Grotesk', sans-serif" font-size="14" font-weight="700">CONFIRMAR ASISTENCIA</text>
+  </g>
+</svg>
