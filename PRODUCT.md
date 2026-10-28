@@ -21,13 +21,13 @@
 
 ## 3. Oferta de Servicios y Modelo de Negocio
 
-### Servicios Principales (Pago Único / Proyecto)
-* **Diseño Web a Medida:** Sitios corporativos y tiendas online con arquitectura limpia, velocidad ultrarrápida (< 1.2s) y diseño responsive.
-* **Branding & Identidad:** Logotipos vectoriales, sistemas tipográficos y diseño UI/UX.
-* **Marketing Digital & SEO:** Embudos de conversión, analítica y optimización técnica para motores de búsqueda.
-* **Gestores de Datos & Automatización:** Dashboards analíticos, bases de datos y flujos de trabajo inteligentes.
+### Servicios Principales (Precios de Lanzamiento Oficiales)
+* **Landing Page de Ventas ($120.000 ARS):** Desarrollo a medida 100% código por programador directo, sin plantillas, optimizada para vender y velocidad < 1.0s.
+* **Sitio Web Institucional ($160.000 ARS):** Hasta 5 secciones completas, código ultrarrápido, SEO técnico de base y optimizado para PyMEs, empresas y profesionales.
+* **Sitio con Carrito / E-Commerce ($220.000 ARS):** Catálogo de productos interactivo, pasarela de pagos integrada, carrito optimizado y pedidos directos a WhatsApp.
+* **Gestores de Datos & Automatización (Desde $350.000 ARS):** Dashboards analíticos, bases de datos avanzadas, panel de administración con JWT y flujos de trabajo inteligentes.
 
-### Modelo Recurrente (Planes Mensuales de Suscripción)
-* **Plan Básico (10h/mes):** Actualizaciones de Core y Plugins, copias de seguridad semanales y soporte por email.
-* **Plan Profesional (30h/mes - Recomendado):** Soporte vía chat WhatsApp y email, pruebas en entorno de desarrollo, monitoreo continuo de seguridad y optimización de velocidad.
-* **Plan Empresarial (Horas Ilimitadas/mes):** Mantenimiento continuo integral, soporte 24/7 VIP, auditorías mensuales de seguridad y consultoría estratégica de conversión.
+### Modelo Recurrente (Planes Mensuales de Suscripción en ARS)
+* **Plan Básico ($25.000 ARS/mes — Anual: $20.000/mes):** 3 a 5 horas mensuales de soporte y ajustes menores, actualizaciones de Core y código, copias de seguridad semanales y soporte directo por WhatsApp y email.
+* **Plan Profesional ($45.000 ARS/mes — Anual: $36.000/mes — Recomendado):** 10 a 12 horas mensuales de desarrollo y mejoras continuas, pruebas en entorno de desarrollo, monitoreo activo de ciberseguridad, copias de seguridad diarias automatizadas y respuesta prioritaria en < 4h.
+* **Plan Empresarial ($85.000 ARS/mes — Anual: $68.000/mes):** Mantenimiento continuo integral, arquitectura a medida, atención 24/7 VIP directa, auditorías continuas de rendimiento y consultoría estratégica mensual.

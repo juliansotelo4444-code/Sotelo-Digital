@@ -3,16 +3,95 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#101010">
-  <meta name="description" content="Diseño web a medida, branding y soporte digital para marcas que quieren crecer. Hablemos directamente sobre tu proyecto.">
-  <title>Sotelo Digital — Diseño web que impulsa tu negocio</title>
+  <meta name="theme-color" content="#0A0A0C">
+  <meta name="robots" content="index, follow">
+  <meta name="description" content="Sotelo Digital — Desarrollo web a medida, 100% código propio por programador directo. Sin plantillas, sin WordPress, ultra rápida (< 1.0s) y optimizada para vender. Landing Pages desde $120.000, Institucionales $160.000 y Tiendas $220.000.">
+  <meta name="keywords" content="diseño web a medida, programador web argentina, landing page alta conversion, sitio web institucional, tienda online ecommerce, desarrollo sin plantillas, sotelo digital">
+  <link rel="canonical" href="https://sotelodigital.com">
+  <title>Sotelo Digital — Tu Web a Medida · 100% Código Propio</title>
   
-  <!-- Fonts -->
+  <!-- Preload Hero LCP Resource -->
+  <link rel="preload" as="image" href="assets/images/dashboard-mockup.jpg">
+
+  <!-- Open Graph / Facebook / WhatsApp / LinkedIn -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://sotelodigital.com">
+  <meta property="og:title" content="Sotelo Digital — Tu Web a Medida · 100% Código Propio">
+  <meta property="og:description" content="Desarrollo web profesional por programador directo. Sin plantillas ni WordPress: ultra rápida, segura y optimizada para convertir visitas en ventas.">
+  <meta property="og:image" content="assets/images/dashboard-mockup.jpg">
+  <meta property="og:site_name" content="Sotelo Digital">
+  <meta property="og:locale" content="es_AR">
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://sotelodigital.com">
+  <meta name="twitter:title" content="Sotelo Digital — Tu Web a Medida · 100% Código Propio">
+  <meta name="twitter:description" content="Desarrollo web a medida sin plantillas. Ultra rápida (< 1.0s) y optimizada para vender.">
+  <meta name="twitter:image" content="assets/images/dashboard-mockup.jpg">
+
+  <!-- JSON-LD Structured Data (Organization & Services) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Sotelo Digital",
+    "url": "https://sotelodigital.com",
+    "logo": "https://sotelodigital.com/assets/logo.svg",
+    "image": "https://sotelodigital.com/assets/images/dashboard-mockup.jpg",
+    "description": "Agencia de desarrollo web a medida, sitios institucionales y tiendas online con 100% código propio y alta conversión.",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "AR"
+    },
+    "openingHours": "Mo-Fr 09:00-19:00",
+    "telephone": "+5491167873243",
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Servicios de Desarrollo Web",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Landing Page de Ventas",
+            "description": "Desarrollo a medida 100% código por programador directo, optimizada para vender."
+          },
+          "price": "120000",
+          "priceCurrency": "ARS"
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Sitio Web Institucional",
+            "description": "Hasta 5 secciones estratégicas, código ultra rápido optimizado para Google."
+          },
+          "price": "160000",
+          "priceCurrency": "ARS"
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Sitio con Carrito / E-Commerce",
+            "description": "Catálogo de productos, pasarela de pagos y checkout ágil."
+          },
+          "price": "220000",
+          "priceCurrency": "ARS"
+        }
+      ]
+    }
+  }
+  </script>
+
+  <!-- Fonts (Async preconnect) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800;900&family=Outfit:wght@400;600;700;800;900&display=swap" rel="stylesheet">
   
   <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/isotype.png">
   <link rel="icon" type="image/svg+xml" href="assets/isotype.svg">
 
   <!-- Core Stylesheet -->
@@ -26,15 +105,10 @@
   <header class="site-header">
     <div class="nav wrap">
       <a class="brand" href="#inicio" aria-label="Sotelo Digital, inicio">
-        <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true">
-          <path fill="#E50914" d="M20 2 38 12.5v15L20 38 2 27.5v-15z"/>
-          <path fill="#fff" d="M20 8.2 31.2 14.7v10.6L20 31.8 8.8 25.3V14.7z"/>
-          <path fill="#101010" d="M20 13.4 26.7 17.3v5.4L20 26.6l-6.7-3.9v-5.4z"/>
-          <path fill="#E50914" d="m20 13.4 6.7 3.9-6.7 3.9-6.7-3.9z"/>
-        </svg>
+        <img src="assets/isotype.png" alt="Sotelo Digital" class="brand-mark" width="38" height="42" style="object-fit: contain;">
         <span class="brand-copy">
           <span class="brand-name">SOTELO DIGITAL</span>
-          <span class="brand-tagline">CREATIVE AGENCY</span>
+          <span class="brand-tagline">100% CÓDIGO PROPIO</span>
         </span>
       </a>
 
@@ -43,11 +117,15 @@
       </button>
 
       <nav class="nav-links" id="main-navigation" aria-label="Navegación principal">
+        <a href="#lanzamiento">Lanzamiento</a>
+        <a href="#porque-nosotros">¿Por qué código?</a>
         <a href="#servicios">Servicios</a>
         <a href="#proyectos">Proyectos</a>
-        <a href="#planes">Soporte mensual</a>
+        <a href="#planes">Soporte</a>
+        <a href="#testimonios">Clientes</a>
+        <a href="#faq">Preguntas</a>
         <a href="#cotizador">Cotizador</a>
-        <a href="#contacto" class="nav-button trigger-consultation-modal">Hablemos</a>
+        <a href="#contacto" class="nav-button">Hablemos</a>
       </nav>
     </div>
   </header>
@@ -152,6 +230,244 @@
             <span class="metric-label">Monitoreo de Disponibilidad</span>
           </div>
         </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         PROMOS DE LANZAMIENTO (Alineadas 100% con las Publicidades Oficiales)
+         =================================================================== -->
+    <section class="section promo-section" id="lanzamiento">
+      <div class="wrap">
+        <div style="text-align: center; max-width: 720px; margin: 0 auto;">
+          <span class="launch-tag">Lanzamiento</span>
+          <h2 class="section-title">Precios Transparentes. <span class="accent">100% Código Propio.</span></h2>
+          <p class="section-intro">Tu presencia digital desarrollada a medida por programador directo. Sin intermediarios, sin plantillas genéricas y sin costos ocultos.</p>
+        </div>
+
+        <div class="promo-offers-grid">
+          
+          <!-- Promo 1: Landing Page ($120.000) -->
+          <article class="promo-card">
+            <div>
+              <span class="launch-tag">Lanzamiento</span>
+              <h3 class="promo-title">Landing Page</h3>
+              <div class="promo-price-big">$120.000</div>
+              
+              <div class="promo-pill-cyan">
+                DESARROLLO A MEDIDA &bull; 100% CÓDIGO
+              </div>
+              
+              <p class="promo-subhead">Por programador directo</p>
+              <p class="promo-desc">Sin plantillas, optimizada para vender e impulsar tus campañas publicitarias.</p>
+              
+              <ul class="promo-checklist">
+                <li>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>1 Página de alto impacto comercial</span>
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Botones y formulario directo a WhatsApp</span>
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Carga ultrarrápida (&lt; 1.0s garantizado)</span>
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>100% responsive para celulares y tablets</span>
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Estructura optimizada para pauta digital</span>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <div class="scarcity-pill">&iexcl;&Uacute;LTIMOS CUPOS!</div>
+              <a href="#" class="promo-wa-btn" data-plan="Landing Page $120.000">
+                <span>&lsaquo;&lsaquo; &iexcl;COTIZ&Aacute; POR WHATSAPP! &rsaquo;&rsaquo;</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Promo 2: Sitio Web Institucional ($160.000 - Más Elegido) -->
+          <article class="promo-card featured">
+            <div>
+              <span class="launch-tag">Más Elegido &middot; Lanzamiento</span>
+              <h3 class="promo-title">Sitio Web Institucional</h3>
+              <div class="promo-price-big">$160.000</div>
+              
+              <div class="promo-pill-cyan">
+                HASTA 5 SECCIONES &bull; CÓDIGO ULTRA RÁPIDO
+              </div>
+              
+              <p class="promo-subhead">Diseño moderno y profesional</p>
+              <p class="promo-desc">Ideal para empresas, PyMEs y profesionales que buscan autoridad y confianza.</p>
+              
+              <ul class="promo-checklist">
+                <li>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Hasta 5 secciones completas (Inicio, Servicios, etc.)</span>
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Optimizado para Google (SEO Técnico de base)</span>
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>100% Código propio (Sin WordPress ni plugins pesados)</span>
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Integración de catálogo, galería y redes</span>
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Configuración de dominio y correo corporativo</span>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <div class="scarcity-pill">&iexcl;&Uacute;LTIMOS CUPOS!</div>
+              <a href="#" class="promo-wa-btn" data-plan="Sitio Institucional $160.000">
+                <span>&lsaquo;&lsaquo; &iexcl;COTIZ&Aacute; POR WHATSAPP! &rsaquo;&rsaquo;</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Promo 3: Sitio con Carrito ($220.000) -->
+          <article class="promo-card">
+            <div>
+              <span class="launch-tag">Lanzamiento</span>
+              <h3 class="promo-title">Sitio con Carrito</h3>
+              <div class="promo-price-big">$220.000</div>
+              
+              <div class="promo-pill-cyan">
+                CATÁLOGO + PASARELA DE PAGOS
+              </div>
+              
+              <p class="promo-subhead">Con carrito optimizado</p>
+              <p class="promo-desc">Integración de cobros online y checkout ágil directo a tu canal de ventas.</p>
+              
+              <ul class="promo-checklist">
+                <li>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Catálogo de productos con filtros instantáneos</span>
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Carrito flotante interactivo y checkout sin fricción</span>
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Integración de cobros (Mercado Pago / Transferencia)</span>
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Recepción inmediata de pedidos en tu WhatsApp</span>
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Panel autogestionable de productos y stock</span>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <div class="scarcity-pill">&iexcl;&Uacute;LTIMOS CUPOS!</div>
+              <a href="#" class="promo-wa-btn" data-plan="Sitio con Carrito $220.000">
+                <span>&lsaquo;&lsaquo; &iexcl;COTIZ&Aacute; POR WHATSAPP! &rsaquo;&rsaquo;</span>
+              </a>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Banner de Urgencia & Cupos (Ad 5) -->
+        <div class="monthly-urgency-banner">
+          <span class="launch-tag">Disponibilidad Limitada</span>
+          <h2>&iexcl;&Uacute;ltimos Cupos de Mes!</h2>
+          <h3>Reserv&aacute; Tu Lugar</h3>
+          <div class="promo-pill-cyan" style="margin-bottom: 20px;">
+            DESARROLLOS EXCLUSIVOS &bull; A MEDIDA
+          </div>
+          <p class="urgency-lead">Tomamos pocos proyectos al mes.</p>
+          <p class="urgency-sub">Para garantizar la m&aacute;xima calidad, rendimiento t&eacute;cnico y atenci&oacute;n personalizada directa con el programador.</p>
+          
+          <a href="#" class="urgency-cta-btn">
+            <span>&lsaquo;&lsaquo; &iexcl;Escribinos y se&ntilde;&aacute; tu web hoy mismo! &rsaquo;&rsaquo;</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width: 20px; height: 20px;"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         ¿POR QUÉ ELEGIRNOS? 100% CÓDIGO PROPIO (Ad 4)
+         =================================================================== -->
+    <section class="section why-us-section" id="porque-nosotros">
+      <div class="wrap">
+        <div style="text-align: center; max-width: 760px; margin: 0 auto;">
+          <div class="promo-pill-cyan" style="font-size: 0.95rem;">
+            100% C&Oacute;DIGO PROPIO
+          </div>
+          <h2 class="section-title">&iquest;Por qu&eacute; <span class="accent">elegirnos?</span></h2>
+          <p class="section-intro">La mayor&iacute;a de agencias te venden plantillas de WordPress saturadas de plugins. En Sotelo Digital construimos con c&oacute;digo limpio hecho a mano.</p>
+        </div>
+
+        <div class="why-us-grid">
+          
+          <article class="why-card">
+            <span class="why-code-tag">&lt;/&gt;</span>
+            <h3>Sin Plantillas &bull; Sin WordPress</h3>
+            <p>Nada de plantillas prefabricadas de baja calidad ni constructores lentos que inflan el código. Cada línea está escrita pensando en tu modelo de negocio.</p>
+          </article>
+
+          <article class="why-card">
+            <span class="why-code-tag">&lt;/&gt;</span>
+            <h3>M&aacute;s Velocidad, Seguridad y Rendimiento</h3>
+            <p>Tiempos de carga inferiores a 1 segundo. Al no depender de plugins de terceros con vulnerabilidades, tu sitio es inmune a las fallas comunes de seguridad.</p>
+          </article>
+
+          <article class="why-card">
+            <span class="why-code-tag">&lt;/&gt;</span>
+            <h3>Optimizado para Posicionar en Google</h3>
+            <p>Estructura HTML5 semántica y Core Web Vitals impecables de base. Google premia la velocidad real posicionando tu sitio por encima de tus competidores.</p>
+          </article>
+
+        </div>
+
+        <!-- Tabla comparativa visual -->
+        <div class="code-vs-templates">
+          <div class="comparison-column bad">
+            <h4>
+              <span>&times;</span> Sitios con WordPress / Plantillas
+            </h4>
+            <ul class="comparison-list">
+              <li><span>&bull;</span> Cargas lentas de 4 a 8 segundos.</li>
+              <li><span>&bull;</span> Vulnerables a hackeos por plugins desactualizados.</li>
+              <li><span>&bull;</span> Diseños clónicos que se ven iguales al resto.</li>
+              <li><span>&bull;</span> Formularios eternos y soporte burocrático.</li>
+            </ul>
+          </div>
+
+          <div class="comparison-column good">
+            <h4>
+              <span>&check;</span> Sotelo Digital: 100% Código Propio
+            </h4>
+            <ul class="comparison-list">
+              <li><span>&bull;</span> Velocidad récord menor a 1.0s con 95+ en Lighthouse.</li>
+              <li><span>&bull;</span> Arquitectura limpia, moderna y ultra segura.</li>
+              <li><span>&bull;</span> Diseño exclusivo adaptado a tus ventas.</li>
+              <li><span>&bull;</span> Trato directo por WhatsApp con el programador.</li>
+            </ul>
+          </div>
+        </div>
+
       </div>
     </section>
 
@@ -337,7 +653,7 @@
           <!-- Proyecto 3: Vertical Global Ascensores -->
           <article class="project-card portfolio-card" data-category="landing">
             <div class="project-art">
-              <img src="assets/images/dashboard-mockup.jpg" alt="Vertical Global Ascensores y Elevación Mockup" loading="lazy">
+              <img src="assets/images/industria-lam.jpg" alt="Vertical Global Ascensores y Elevación Mockup" loading="lazy">
               <div class="portfolio-overlay">
                 <button class="button button-primary view-project-btn" data-project="vertical-global">
                   <span>Ver Caso de Éxito</span>
@@ -372,7 +688,7 @@
           </article>
 
           <!-- Proyecto 4: Sotelo Propiedades -->
-          <article class="project-card portfolio-card" data-category="landing">
+          <article class="project-card portfolio-card" data-category="dashboard">
             <div class="project-art">
               <img src="assets/images/realestate-mockup.jpg" alt="Sotelo Propiedades Portal Inmobiliario Mockup" loading="lazy">
               <div class="portfolio-overlay">
@@ -399,6 +715,10 @@
                   <button class="text-link view-project-btn" data-project="sotelo-propiedades" style="background: none; border: none; cursor: pointer;">
                     Detalles <span>&nearr;</span>
                   </button>
+                  <a href="https://sotelo-propiedades-frontend.vercel.app" target="_blank" rel="noopener noreferrer" class="project-direct-btn" aria-label="Visitar demo de Sotelo Propiedades">
+                    <span>Ver Demo</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+                  </a>
                   <a href="https://github.com/juliansotelo4444-code/sotelo-propiedades-frontend" target="_blank" rel="noopener noreferrer" class="project-direct-btn" aria-label="Ver repositorio de Sotelo Propiedades en GitHub">
                     <span>GitHub</span>
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
@@ -436,7 +756,11 @@
                   <button class="text-link view-project-btn" data-project="servicios-oeste" style="background: none; border: none; cursor: pointer;">
                     Detalles <span>&nearr;</span>
                   </button>
-                  <a href="https://github.com/juliansotelo4444-code/servicios-oeste-spi" target="_blank" rel="noopener noreferrer" class="project-direct-btn" aria-label="Ver repositorio de Servicios Oeste SPI en GitHub">
+                  <a href="https://servicios-oeste-spi-4tii.vercel.app" target="_blank" rel="noopener noreferrer" class="project-direct-btn" aria-label="Visitar web oficial de Servicios Oeste SPI">
+                    <span>Web Oficial</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+                  </a>
+                  <a href="https://github.com/juliansotelo4444-code/servicios-oeste-spi.git" target="_blank" rel="noopener noreferrer" class="project-direct-btn" aria-label="Ver repositorio de Servicios Oeste SPI en GitHub">
                     <span>GitHub</span>
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
                   </a>
@@ -473,44 +797,11 @@
                   <button class="text-link view-project-btn" data-project="yeny" style="background: none; border: none; cursor: pointer;">
                     Detalles <span>&nearr;</span>
                   </button>
-                  <a href="https://github.com/juliansotelo4444-code/masaje-yeny" target="_blank" rel="noopener noreferrer" class="project-direct-btn" aria-label="Ver repositorio de Yeny Masoterapia en GitHub">
-                    <span>GitHub</span>
+                  <a href="https://masaje-yeny.vercel.app" target="_blank" rel="noopener noreferrer" class="project-direct-btn" aria-label="Visitar web oficial de Yeny Masoterapia">
+                    <span>Web Oficial</span>
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
                   </a>
-                </div>
-              </div>
-            </div>
-          </article>
-
-          <!-- Proyecto 7: Cuñadas Chic -->
-          <article class="project-card portfolio-card" data-category="dashboard">
-            <div class="project-art">
-              <img src="assets/images/ecommerce-mockup.jpg" alt="Cuñadas Chic Gestión de Fardos Mockup" loading="lazy">
-              <div class="portfolio-overlay">
-                <button class="button button-primary view-project-btn" data-project="cunadas-chic">
-                  <span>Ver Caso de Éxito</span>
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width: 16px; height: 16px;"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-                </button>
-              </div>
-            </div>
-            <div class="project-meta">
-              <div>
-                <div class="project-tags">
-                  <span class="project-tag tag-accent">Node.js</span>
-                  <span class="project-tag">Express</span>
-                  <span class="project-tag">PostgreSQL</span>
-                  <span class="project-tag">Punto de Venta</span>
-                </div>
-                <h3>Cuñadas Chic - Gestión &amp; Stock</h3>
-                <p>Sistema web para administración de fardos de ropa vintage: control de costos, etiquetado de prendas con código de barras y mostrador de ventas.</p>
-              </div>
-              <div class="project-meta-bottom">
-                <span class="project-stat">Punto de Venta &amp; Stock</span>
-                <div style="display: flex; align-items: center; gap: 8px;">
-                  <button class="text-link view-project-btn" data-project="cunadas-chic" style="background: none; border: none; cursor: pointer;">
-                    Detalles <span>&nearr;</span>
-                  </button>
-                  <a href="https://github.com/juliansotelo4444-code/cu-adas.chic" target="_blank" rel="noopener noreferrer" class="project-direct-btn" aria-label="Ver repositorio de Cuñadas Chic en GitHub">
+                  <a href="https://github.com/juliansotelo4444-code/masaje-yeny.git" target="_blank" rel="noopener noreferrer" class="project-direct-btn" aria-label="Ver repositorio de Yeny Masoterapia en GitHub">
                     <span>GitHub</span>
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
                   </a>
@@ -553,19 +844,19 @@
             <p class="plan-type">Para empezar</p>
             <h3>Básico</h3>
             <div class="plan-price-row">
-              <span class="plan-price" id="price-basic">$149</span>
+              <span class="plan-price" id="price-basic">$25.000</span>
               <span class="plan-period">/mes</span>
             </div>
             <p class="plan-summary">Lo esencial para mantener tu sitio actualizado, seguro y recibir ayuda cuando la necesitás.</p>
             <div class="plan-divider"></div>
             <ul class="plan-features">
               <li>3 a 5 horas mensuales de soporte y ajustes menores</li>
-              <li>Actualizaciones de Core y Plugins</li>
-              <li>Soporte técnico por WhatsApp y email</li>
+              <li>Actualizaciones de Core y código</li>
+              <li>Soporte técnico directo por WhatsApp y email</li>
               <li>Copias de seguridad semanales</li>
               <li>Monitoreo de caídas de servidor</li>
             </ul>
-            <a class="button button-outline" href="https://wa.me/5491123456789?text=Hola%20Sotelo%20Digital!%20Quiero%20consultar%20por%20el%20Plan%20Básico." target="_blank">Consultar por este plan</a>
+            <a class="button button-outline" href="https://wa.me/5491167873243?text=Hola%20Sotelo%20Digital!%20Quiero%20consultar%20por%20el%20Plan%20Básico." target="_blank">Consultar por este plan</a>
           </article>
 
           <!-- Plan Profesional (Destacado) -->
@@ -574,7 +865,7 @@
             <p class="plan-type">Para crecer tranquilo</p>
             <h3>Profesional</h3>
             <div class="plan-price-row">
-              <span class="plan-price" id="price-pro">$299</span>
+              <span class="plan-price" id="price-pro">$45.000</span>
               <span class="plan-period">/mes</span>
             </div>
             <p class="plan-summary">Más prevención, soporte prioritario por WhatsApp y optimización continua de velocidad.</p>
@@ -587,7 +878,7 @@
               <li>Copias de seguridad diarias automatizadas</li>
               <li>Respuesta prioritaria en &lt; 4 horas</li>
             </ul>
-            <a class="button button-primary" href="https://wa.me/5491123456789?text=Hola%20Sotelo%20Digital!%20Quiero%20contratar%20el%20Plan%20Profesional." target="_blank">Consultar por este plan</a>
+            <a class="button button-primary" href="https://wa.me/5491167873243?text=Hola%20Sotelo%20Digital!%20Quiero%20contratar%20el%20Plan%20Profesional." target="_blank">Consultar por este plan</a>
           </article>
 
           <!-- Plan Empresarial -->
@@ -595,7 +886,7 @@
             <p class="plan-type">Operaciones exigentes</p>
             <h3>Empresarial</h3>
             <div class="plan-price-row">
-              <span class="plan-price" id="price-enterprise">$599</span>
+              <span class="plan-price" id="price-enterprise">$85.000</span>
               <span class="plan-period">/mes</span>
             </div>
             <p class="plan-summary">Acompañamiento integral para marcas y plataformas con necesidades avanzadas.</p>
@@ -603,11 +894,11 @@
             <ul class="plan-features">
               <li>Horas mensuales según alcance avanzado acordado</li>
               <li>Mantenimiento integral y arquitectura</li>
-              <li>Atención 24/7 VIP (WhatsApp, Tel, Email)</li>
+              <li>Atención 24/7 VIP (WhatsApp directo y llamadas)</li>
               <li>Auditorías continuas de rendimiento</li>
               <li>Consultoría estratégica mensual</li>
             </ul>
-            <a class="button button-outline" href="https://wa.me/5491123456789?text=Hola%20Sotelo%20Digital!%20Quiero%20contratar%20el%20Plan%20Empresarial." target="_blank">Consultar por este plan</a>
+            <a class="button button-outline" href="https://wa.me/5491167873243?text=Hola%20Sotelo%20Digital!%20Quiero%20contratar%20el%20Plan%20Empresarial." target="_blank">Consultar por este plan</a>
           </article>
 
         </div>
@@ -632,20 +923,20 @@
             <div class="estimator-step">
               <h3 class="step-heading"><span class="step-num">1</span> Tipo de Proyecto</h3>
               <div class="estimator-options">
-                <button class="estimator-option-btn opt-type active" data-val="Landing Page de Alta Conversión">
-                  <span>Landing Page de Ventas</span>
+                <button class="estimator-option-btn opt-type active" data-val="Landing Page de Ventas">
+                  <span>Landing Page ($120.000)</span>
                   <span class="opt-arrow">&rarr;</span>
                 </button>
-                <button class="estimator-option-btn opt-type" data-val="E-Commerce / Tienda Online">
-                  <span>Tienda Online (E-Commerce)</span>
+                <button class="estimator-option-btn opt-type" data-val="Sitio Web Institucional">
+                  <span>Institucional ($160.000)</span>
                   <span class="opt-arrow">&rarr;</span>
                 </button>
-                <button class="estimator-option-btn opt-type" data-val="Sitio Web Corporativo">
-                  <span>Sitio Web Corporativo</span>
+                <button class="estimator-option-btn opt-type" data-val="Sitio con Carrito / Tienda Online">
+                  <span>Con Carrito ($220.000)</span>
                   <span class="opt-arrow">&rarr;</span>
                 </button>
                 <button class="estimator-option-btn opt-type" data-val="Gestor de Datos & Automatización">
-                  <span>Gestor de Datos / Web App</span>
+                  <span>Web App / ERP a Medida</span>
                   <span class="opt-arrow">&rarr;</span>
                 </button>
               </div>
@@ -699,11 +990,11 @@
           <div class="estimator-result-banner">
             <div>
               <p class="summary-heading">Configuración Seleccionada:</p>
-              <p class="summary-details"><strong>Proyecto:</strong> Landing Page | <strong>Plazo:</strong> Estándar | <strong>Soporte:</strong> Plan Profesional (10 a 12h/mes)</p>
+              <p class="summary-details"><strong>Proyecto:</strong> Landing Page de Ventas | <strong>Plazo:</strong> Estándar | <strong>Soporte:</strong> Plan Profesional (10 a 12h/mes)</p>
               <div class="estimator-price-indicator">
-                <span class="price-indicator-tag">Inversión base orientativa:</span>
-                <strong class="price-indicator-val" id="estimate-price-range">desde $390 USD</strong>
-                <span class="price-indicator-sub">&middot; Cotización final formal a medida</span>
+                <span class="price-indicator-tag">Inversión de lanzamiento orientativa:</span>
+                <strong class="price-indicator-val" id="estimate-price-range">$120.000 ARS</strong>
+                <span class="price-indicator-sub">&middot; 100% Código propio &middot; Seña y entrega</span>
               </div>
             </div>
             <a href="#" id="estimator-wa-btn" target="_blank" class="button button-primary">
@@ -711,6 +1002,132 @@
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width: 17px; height: 17px;"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
             </a>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         TESTIMONIOS / RESEÑAS DE CLIENTES REALES (Social Proof)
+         =================================================================== -->
+    <section class="section testimonials-section" id="testimonios">
+      <div class="wrap">
+        <div style="text-align: center; max-width: 720px; margin: 0 auto;">
+          <p class="section-kicker">Resultados Comprobados</p>
+          <h2 class="section-title">Lo que dicen quienes ya trabajan <span class="accent">con nosotros.</span></h2>
+          <p class="section-intro">Marcas y empresas reales que multiplicaron sus ventas y profesionalizaron su presencia con código a medida.</p>
+        </div>
+
+        <div class="testimonials-grid">
+          
+          <article class="testimonial-card">
+            <div>
+              <div class="stars-gold" aria-label="5 de 5 estrellas">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+              <p class="testimonial-quote">"Pasamos de una web lenta que nadie visitaba a un e-commerce ultra rápido. Las ventas por WhatsApp crecieron más de un 180% en los primeros dos meses. El trato directo con Julián fue impecable."</p>
+            </div>
+            <div class="testimonial-author">
+              <div class="author-avatar">MP</div>
+              <div class="author-info">
+                <strong>Mix Point Alimentos</strong>
+                <span>Distribuidora &middot; E-Commerce</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial-card">
+            <div>
+              <div class="stars-gold" aria-label="5 de 5 estrellas">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+              <p class="testimonial-quote">"Para nosotros era fundamental una web corporativa que transmitiera solidez técnica para licitaciones y clientes de consorcios. La entrega fue en tiempo récord y el soporte mensual nos da total tranquilidad."</p>
+            </div>
+            <div class="testimonial-author">
+              <div class="author-avatar">VG</div>
+              <div class="author-info">
+                <strong>Vertical Global</strong>
+                <span>Ingeniería en Elevación &middot; CABA</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial-card">
+            <div>
+              <div class="stars-gold" aria-label="5 de 5 estrellas">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+              <p class="testimonial-quote">"Necesitábamos posicionar en Zona Oeste para obras de tinglados y pisos industriales. El sitio vuela, cargan todas las fotos en un segundo y nos contactan clientes calificados todas las semanas."</p>
+            </div>
+            <div class="testimonial-author">
+              <div class="author-avatar">SO</div>
+              <div class="author-info">
+                <strong>Servicios Oeste SPI</strong>
+                <span>Soluciones Industriales &middot; GBA Oeste</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         PREGUNTAS FRECUENTES (FAQ Acordeón)
+         =================================================================== -->
+    <section class="section faq-section" id="faq">
+      <div class="wrap">
+        <div style="text-align: center; max-width: 720px; margin: 0 auto;">
+          <p class="section-kicker">Dudas resueltas</p>
+          <h2 class="section-title">Preguntas <span class="accent">Frecuentes.</span></h2>
+          <p class="section-intro">Todo lo que necesitás saber antes de iniciar tu desarrollo web con Sotelo Digital.</p>
+        </div>
+
+        <div class="faq-list">
+          
+          <div class="faq-item active">
+            <button class="faq-question" type="button" aria-expanded="true">
+              <span>¿Por qué 100% código propio es mucho mejor que WordPress?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>WordPress utiliza plantillas genéricas cargadas de plugins pesados que ralentizan tu sitio (4 a 8 segundos de carga), generan fallas de seguridad frecuentes y requieren actualizaciones constantes que suelen romper la web. Al construir tu sitio en 100% código moderno a medida, garantizamos tiempos de carga menores a 1 segundo, seguridad total y una calificación de 95+ en Google Lighthouse para posicionar mejor que tu competencia.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false">
+              <span>¿Cómo funciona el proceso de pago y seña?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Trabajamos de forma transparente y segura: se abona una seña del 50% al iniciar el proyecto para reservar tu cupo de desarrollo y congelar el precio de lanzamiento. El 50% restante se abona una vez finalizado el desarrollo, verificado el funcionamiento y con tu total aprobación antes del lanzamiento oficial.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false">
+              <span>¿En cuánto tiempo estará lista mi web?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Una Landing Page comercial suele completarse en 7 a 10 días hábiles. Un Sitio Web Institucional completo toma entre 14 y 20 días, y una plataforma con carrito o sistema a medida entre 18 y 25 días, dependiendo del volumen de contenidos y productos.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false">
+              <span>¿Qué pasa si necesito hacer cambios o actualizaciones después de la entrega?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Todos nuestros desarrollos incluyen 30 días de garantía post-entrega para cualquier ajuste técnico. Además, disponemos de nuestros planes de soporte y mantenimiento mensual preventivo para que no tengas que preocuparte nunca por actualizaciones, copias de seguridad ni mejoras continuas.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false">
+              <span>¿Tengo trato directo con el programador que hace mi web?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>¡Sí, 100%! Hablás directamente con quien escribe el código de tu sitio por WhatsApp. Sin intermediarios, sin ejecutivos de cuentas que no entienden de tecnología y sin cuestionarios interminables de 30 preguntas.</p>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
@@ -790,23 +1207,22 @@
     <div class="wrap">
       <div class="footer-main">
         <a class="brand" href="#inicio" aria-label="Sotelo Digital, volver al inicio">
-          <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true">
-            <path fill="#E50914" d="M20 2 38 12.5v15L20 38 2 27.5v-15z"/>
-            <path fill="#fff" d="M20 8.2 31.2 14.7v10.6L20 31.8 8.8 25.3V14.7z"/>
-            <path fill="#101010" d="M20 13.4 26.7 17.3v5.4L20 26.6l-6.7-3.9v-5.4z"/>
-            <path fill="#E50914" d="m20 13.4 6.7 3.9-6.7 3.9-6.7-3.9z"/>
-          </svg>
+          <img src="assets/isotype.png" alt="Sotelo Digital" class="brand-mark" width="38" height="42" style="object-fit: contain;">
           <span class="brand-copy">
             <span class="brand-name">SOTELO DIGITAL</span>
-            <span class="brand-tagline">CREATIVE AGENCY</span>
+            <span class="brand-tagline">100% CÓDIGO PROPIO</span>
           </span>
         </a>
 
         <nav class="footer-links" aria-label="Enlaces del pie de página">
           <a href="#inicio">Inicio</a>
+          <a href="#lanzamiento">Lanzamiento</a>
+          <a href="#porque-nosotros">¿Por qué código?</a>
           <a href="#servicios">Servicios</a>
           <a href="#proyectos">Proyectos</a>
           <a href="#planes">Planes</a>
+          <a href="#testimonios">Clientes</a>
+          <a href="#faq">Preguntas</a>
           <a href="#cotizador">Cotizador</a>
           <a href="#contacto">Contacto</a>
         </nav>
@@ -827,7 +1243,7 @@
   <!-- ===================================================================
        Floating WhatsApp Button
        =================================================================== -->
-  <a href="https://wa.me/5491123456789?text=Hola%20Sotelo%20Digital!%20Vengo%20desde%20su%20sitio%20web." target="_blank" class="whatsapp-floating" aria-label="Contactar por WhatsApp">
+  <a href="https://wa.me/5491167873243?text=Hola%20Sotelo%20Digital!%20Vengo%20desde%20su%20sitio%20web." target="_blank" class="whatsapp-floating" aria-label="Contactar por WhatsApp">
     <div class="whatsapp-label">¡Hablemos en directo!</div>
     <div class="whatsapp-bubble">
       <svg viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766 0-3.18-2.587-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.173.086.275.072.376-.044.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.099.824zm-3.423-14.416c-6.627 0-12 5.373-12 12 0 2.159.57 4.184 1.564 5.939l-1.564 5.711 5.861-1.537c1.716.94 3.684 1.479 5.781 1.479 6.627 0 12-5.373 12-12 0-6.627-5.373-12-12-12z"/></svg>

@@ -26,11 +26,11 @@ export interface PricingTiers {
 }
 
 // --- Configuration Constants ---
-const WHATSAPP_NUMBER: string = '5491123456789';
+const WHATSAPP_NUMBER: string = '5491167873243';
 
 const PRICING_DATA: PricingTiers = {
-  monthly: { basic: '$149', pro: '$299', enterprise: '$599' },
-  annual: { basic: '$119', pro: '$239', enterprise: '$479' }
+  monthly: { basic: '$25.000', pro: '$45.000', enterprise: '$85.000' },
+  annual: { basic: '$20.000', pro: '$36.000', enterprise: '$68.000' }
 };
 
 // --- Application Controller ---
@@ -46,7 +46,7 @@ class SoteloDigitalApp {
   private billingSwitch: HTMLElement | null = null;
 
   private currentEstimate: EstimateState = {
-    type: 'Landing Page de Alta Conversión',
+    type: 'Landing Page de Ventas',
     timeline: 'Estándar (14 a 20 días)',
     support: 'Plan Profesional (10 a 12h/mes)'
   };
@@ -55,6 +55,8 @@ class SoteloDigitalApp {
     this.cacheElements();
     this.bindEvents();
     this.initEstimator();
+    this.initFaq();
+    this.syncWhatsAppLinks();
     this.updateCopyrightYear();
   }
 
@@ -289,7 +291,7 @@ class SoteloDigitalApp {
         </div>
       </div>
       
-      <h3 style="font-size: 1.8rem; margin-bottom: 12px; font-family: var(--font-heading); font-weight: 800; color: #FFFFFF;">${project.title}</h3>
+      <h3 id="modal-title" style="font-size: 1.8rem; margin-bottom: 12px; font-family: var(--font-heading); font-weight: 800; color: #FFFFFF;">${project.title}</h3>
       
       <div style="display: flex; flex-wrap: wrap; gap: 16px; margin-bottom: 20px; padding: 14px 18px; background: var(--bg-secondary); border-radius: 10px; border: 1px solid var(--border-color);">
         <div><span style="font-size: 0.8rem; color: var(--text-muted); display: block;">Cliente</span><strong style="color: #FFFFFF;">${project.client}</strong></div>
@@ -372,14 +374,14 @@ class SoteloDigitalApp {
     const priceRangeElem = document.getElementById('estimate-price-range');
 
     const basePrices: Record<string, string> = {
-      'Landing Page de Alta Conversión': 'desde $390 USD',
-      'E-Commerce / Tienda Online': 'desde $890 USD',
-      'Sitio Web Corporativo': 'desde $650 USD',
-      'Gestor de Datos & Automatización': 'desde $1,250 USD'
+      'Landing Page de Ventas': '$120.000 ARS',
+      'Sitio Web Institucional': '$160.000 ARS',
+      'Sitio con Carrito / Tienda Online': '$220.000 ARS',
+      'Gestor de Datos & Automatización': 'desde $350.000 ARS'
     };
 
     if (priceRangeElem) {
-      priceRangeElem.textContent = basePrices[this.currentEstimate.type] || 'desde $390 USD';
+      priceRangeElem.textContent = basePrices[this.currentEstimate.type] || '$120.000 ARS';
     }
 
     if (summaryDetails) {
@@ -387,7 +389,7 @@ class SoteloDigitalApp {
     }
 
     if (waBtn) {
-      const estimatedBase = basePrices[this.currentEstimate.type] || 'desde $390 USD';
+      const estimatedBase = basePrices[this.currentEstimate.type] || '$120.000 ARS';
       const message = [
         '¡Hola Sotelo Digital! Estuve configurando mi propuesta en su sitio web:',
         `• Tipo de Proyecto: ${this.currentEstimate.type}`,
@@ -400,6 +402,48 @@ class SoteloDigitalApp {
 
       waBtn.href = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
     }
+  }
+
+  private initFaq(): void {
+    const faqItems = document.querySelectorAll<HTMLElement>('.faq-item');
+    faqItems.forEach(item => {
+      const questionBtn = item.querySelector<HTMLButtonElement>('.faq-question');
+      questionBtn?.addEventListener('click', () => {
+        const isOpen = item.classList.contains('active');
+        faqItems.forEach(other => other.classList.remove('active'));
+        if (!isOpen) {
+          item.classList.add('active');
+        }
+      });
+    });
+  }
+
+  private syncWhatsAppLinks(): void {
+    // Sync floating button
+    const floatBtn = document.querySelector<HTMLAnchorElement>('.whatsapp-floating');
+    if (floatBtn) {
+      floatBtn.href = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent('¡Hola Sotelo Digital! Vengo desde su sitio web y quiero consultar sobre un proyecto.')}`;
+    }
+
+    // Sync Promo Cards buttons
+    const promoButtons = document.querySelectorAll<HTMLAnchorElement>('.promo-wa-btn');
+    promoButtons.forEach(btn => {
+      const plan = btn.getAttribute('data-plan') || 'un proyecto';
+      btn.href = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(`¡Hola Sotelo Digital! Quiero aprovechar la promo de lanzamiento para: ${plan}.`)}`;
+    });
+
+    // Sync Urgency Banner button
+    const urgencyBtn = document.querySelector<HTMLAnchorElement>('.urgency-cta-btn');
+    if (urgencyBtn) {
+      urgencyBtn.href = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent('¡Hola Sotelo Digital! Quiero reservar uno de los últimos cupos del mes para mi web.')}`;
+    }
+
+    // Sync Maintenance Plan buttons
+    const planButtons = document.querySelectorAll<HTMLAnchorElement>('.plan-card a.button');
+    planButtons.forEach(btn => {
+      const planName = btn.closest('.plan-card')?.querySelector('h3')?.textContent || 'Mantenimiento';
+      btn.href = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(`¡Hola Sotelo Digital! Quiero consultar por el plan de soporte mensual: ${planName}.`)}`;
+    });
   }
 
   private updateCopyrightYear(): void {

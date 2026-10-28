@@ -79,7 +79,7 @@ export const PORTFOLIO_PROJECTS: ProjectItem[] = [
     client: 'Vertical Global',
     timeline: '14 Días',
     metric: 'Presencia Digital Líder',
-    image: 'assets/images/dashboard-mockup.jpg',
+    image: 'assets/images/industria-lam.jpg',
     stack: ['React', 'Vite', 'Tailwind CSS', 'Vercel'],
     results: [
       'Presentación técnica de servicios de ascensores y planes de abono mensual.',
@@ -94,7 +94,7 @@ export const PORTFOLIO_PROJECTS: ProjectItem[] = [
     id: 'sotelo-propiedades',
     title: 'Sotelo Propiedades - Portal Inmobiliario Full-Stack',
     shortTitle: 'Sotelo Propiedades',
-    category: 'landing',
+    category: 'dashboard',
     categoryLabel: 'Plataforma Inmobiliaria',
     badge: 'Full-Stack JWT',
     description: 'Portal inmobiliario moderno desarrollado con React + Vite y backend REST. Catálogo interactivo de propiedades en venta y alquiler con filtros y panel de administración.',
@@ -108,7 +108,9 @@ export const PORTFOLIO_PROJECTS: ProjectItem[] = [
       'Panel privado para publicar, editar y administrar inmuebles con autenticación JWT.',
       'Diseño responsive adaptado de 320px a 2000px con paleta institucional de alto impacto.'
     ],
-    repoUrl: 'https://github.com/juliansotelo4444-code/sotelo-propiedades-frontend'
+    liveUrl: 'https://sotelo-propiedades-frontend.vercel.app',
+    repoUrl: 'https://github.com/juliansotelo4444-code/sotelo-propiedades-frontend',
+    isExternalDemo: true
   },
   {
     id: 'servicios-oeste',
@@ -128,7 +130,9 @@ export const PORTFOLIO_PROJECTS: ProjectItem[] = [
       'Secciones estratégicas de habilitaciones, equipamiento y clientes industriales.',
       'Botón de contacto flotante directo con el equipo técnico comercial.'
     ],
-    repoUrl: 'https://github.com/juliansotelo4444-code/servicios-oeste-spi.git'
+    liveUrl: 'https://servicios-oeste-spi-4tii.vercel.app',
+    repoUrl: 'https://github.com/juliansotelo4444-code/servicios-oeste-spi.git',
+    isExternalDemo: true
   },
   {
     id: 'yeny',
@@ -148,27 +152,9 @@ export const PORTFOLIO_PROJECTS: ProjectItem[] = [
       'Catálogo claro de servicios: masajes descontracturantes, relajantes y piedras calientes.',
       'Enlace directo a agenda por WhatsApp optimizado para conversión en móviles.'
     ],
-    repoUrl: 'https://github.com/juliansotelo4444-code/masaje-yeny.git'
-  },
-  {
-    id: 'cunadas-chic',
-    title: 'Cuñadas Chic - Gestión de Fardos & Vintage',
-    shortTitle: 'Cuñadas Chic',
-    category: 'dashboard',
-    categoryLabel: 'Gestor de Datos / Stock',
-    badge: 'Punto de Venta & Stock',
-    description: 'Sistema web integral para administración de negocio de fardos de ropa vintage: control de costos por fardo, etiquetado de prendas con código de barras y mostrador de ventas.',
-    client: 'Cuñadas Chic',
-    timeline: '12 Días',
-    metric: 'Control de Costos & Ventas',
-    image: 'assets/images/ecommerce-mockup.jpg',
-    stack: ['Node.js', 'Express', 'PostgreSQL', 'SQLite', 'Charts.js'],
-    results: [
-      'Control de fardos, fletes y cálculo de costo neto por prenda.',
-      'Módulo mostrador para cobrar, señas y tickets de compra.',
-      'Directorio de clientas con enlace directo a WhatsApp e Instagram.'
-    ],
-    repoUrl: 'https://github.com/juliansotelo4444-code/cu-adas.chic.git'
+    liveUrl: 'https://masaje-yeny.vercel.app',
+    repoUrl: 'https://github.com/juliansotelo4444-code/masaje-yeny.git',
+    isExternalDemo: true
   }
 ];
 
