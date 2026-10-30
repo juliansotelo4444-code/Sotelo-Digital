@@ -295,13 +295,13 @@ class SoteloDigitalApp {
       
       <div style="display: flex; flex-wrap: wrap; gap: 16px; margin-bottom: 20px; padding: 14px 18px; background: var(--bg-secondary); border-radius: 10px; border: 1px solid var(--border-color);">
         <div><span style="font-size: 0.8rem; color: var(--text-muted); display: block;">Cliente</span><strong style="color: #FFFFFF;">${project.client}</strong></div>
-        <div style="border-left: 1px solid var(--border-color); padding-left: 16px;"><span style="font-size: 0.8rem; color: var(--text-muted); display: block;">Plazo</span><strong style="color: #FFFFFF;">${project.timeline}</strong></div>
-        <div style="border-left: 1px solid var(--border-color); padding-left: 16px;"><span style="font-size: 0.8rem; color: var(--text-muted); display: block;">Impacto</span><strong style="color: var(--red);">${project.metric}</strong></div>
+        <div style="border-left: 1px solid var(--border-color); padding-left: 16px;"><span style="font-size: 0.8rem; color: var(--text-muted); display: block;">Modalidad</span><strong style="color: #FFFFFF;">${project.timeline}</strong></div>
+        <div style="border-left: 1px solid var(--border-color); padding-left: 16px;"><span style="font-size: 0.8rem; color: var(--text-muted); display: block;">Enfoque</span><strong style="color: var(--red);">${project.metric}</strong></div>
       </div>
 
       <p style="margin-bottom: 20px; font-size: 1rem; line-height: 1.6; color: var(--text-body);">${project.description}</p>
 
-      <p style="font-family: var(--font-heading); font-size: 1.1rem; text-transform: uppercase; margin-bottom: 12px; font-weight: 800; color: #FFFFFF;">Logros y Resultados Clave:</p>
+      <p style="font-family: var(--font-heading); font-size: 1.1rem; text-transform: uppercase; margin-bottom: 12px; font-weight: 800; color: #FFFFFF;">Funcionalidades y Características:</p>
       <ul style="list-style: none; margin-bottom: 28px; display: flex; flex-direction: column; gap: 10px; padding: 0;">
         ${project.results.map(r => `
           <li style="display: flex; align-items: center; gap: 10px; font-size: 0.95rem; color: #D4D4D8;">
@@ -330,8 +330,8 @@ class SoteloDigitalApp {
             <span>GitHub</span>
           </a>
         ` : ''}
-        <a href="https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent('Hola Sotelo Digital! Me interesó mucho el caso de éxito de ' + project.title + ' y quisiera cotizar un desarrollo similar para mi negocio.')}" target="_blank" class="button button-primary">
-          Cotizar Proyecto Similar
+        <a href="https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent('Hola Sotelo Digital! Me interesó el proyecto de ' + project.title + ' y quisiera cotizar un desarrollo para mi negocio.')}" target="_blank" class="button button-primary">
+          Consultar por WhatsApp
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width: 17px; height: 17px;"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
         </a>
         <button class="button button-secondary" id="modal-inner-close">Cerrar</button>

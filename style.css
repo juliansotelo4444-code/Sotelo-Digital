@@ -293,28 +293,39 @@ img, svg { display: block; }
   margin-top: 36px;
 }
 
-/* Social Proof */
-.hero-social-proof {
-  display: flex;
+/* Real Credentials & Verification Badge */
+.hero-credentials {
+  display: inline-flex;
   align-items: center;
   gap: 14px;
-  margin-top: 34px;
-  padding-top: 24px;
-  border-top: 1px solid var(--border-subtle);
+  margin-top: 32px;
+  padding: 12px 18px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-sm);
+  backdrop-filter: blur(8px);
 }
-.proof-stars {
-  color: #FBBF24;
-  font-size: 16px;
-  letter-spacing: 2px;
+.credential-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  background: rgba(225, 29, 72, 0.12);
+  border: 1px solid rgba(225, 29, 72, 0.25);
+  color: var(--red);
+  flex-shrink: 0;
 }
-.proof-copy {
+.credential-copy {
   display: flex;
   flex-direction: column;
-  font-size: 12.5px;
+  font-size: 13px;
   line-height: 1.4;
 }
-.proof-copy strong { color: #FFFFFF; font-weight: 700; }
-.proof-copy span { color: var(--text-muted); }
+.credential-copy strong { color: #FFFFFF; font-weight: 700; }
+.credential-copy span { color: var(--text-muted); font-size: 12px; }
+.hero-social-proof { display: none; }
 
 /* Hero Visual 3D Showcase */
 .hero-visual {
